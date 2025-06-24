@@ -3,7 +3,7 @@ body::before {
   content: "";
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif') no-repeat center center / cover;
+  background: url('https://i.pinimg.com/originals/ad/fc/cd/adfccd6a72515359c1c283f912b67616.gif') no-repeat center center / cover;
   filter: blur(8px);
   z-index: -1; /* Чтобы быть позади всего содержимого */
   /* Можно уменьшить яркость или контраст для более мягкого фона */
