@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Портфолио Олега</title>
+  <style>
+    /* Сброс и базовые стили */
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: #121212;
+      color: #eee;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    }
+    header h1 {
+      font-weight: 700;
+      font-size: 1.5rem;
+    }
+    nav a {
+      color: #eee;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #4fc3f7;
+    }
+    main {
+      flex: 1;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    h2 {
+      border-bottom: 2px solid #4fc3f7;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      font-size: 1.8rem;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    /* Проекты */
+    .projects-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      background: #222;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.8);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 0.7rem;
+    }
+    .project-card a {
+      color: #4fc3f7;
+      font-weight: 600;
+      margin-top: auto;
+      text-align: right;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    .project-card a:hover {
+      color: #81d4fa;
+    }
+    /* Музыка */
+    .music-player {
+      max-width: 100%;
+      height: 166px;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+    }
+    /* Контакты */
+    .contacts-list a {
+      color: #4fc3f7;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin-right: 1.5rem;
+      margin-bottom: 0.7rem;
+      transition: color 0.3s ease;
+    }
+    .contacts-list a:hover {
+      color: #81d4fa;
+    }
+    footer {
+      background: #1f1f1f;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: auto;
+    }
+    /* Адаптив */
+    @media (max-width: 480px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 0.5rem;
+      }
+      nav a {
+        margin-left: 0;
+        margin-right: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Олег Бобров</h1>
+    <nav>
+      <a href="#home">Главная</a>
+      <a href="#about">О себе</a>
+      <a href="#projects">Проекты</a>
+      <a href="#music">Музыка</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Привет! Я Олег Бобров</h2>
+      <p>Я — разработчик на Python, 3D-художник и музыкант. Люблю создавать ботов, игры и музыку. Добро пожаловать в моё портфолио!</p>
+    </section>
+
+    <section id="about">
+      <h2>О себе</h2>
+      <p><strong>Навыки:</strong></p>
+      <ul>
+        <li>Python: создание Telegram-ботов, автоматизация, скрипты</li>
+        <li>3D-моделирование: Blender, создание моделей для игр и визуализаций</li>
+        <li>Музыка: композиция, треки на SoundCloud</li>
+        <li>Ausbildung: прохожу профессиональное обучение в IT-сфере</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Проекты</h2>
+      <div class="projects-list">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x140?text=Python+бот" alt="Python бот" />
+          <p>Телеграм-бот для автоматизации задач и уведомлений.</p>
+          <a href="https://github.com/yourusername/python-telegram-bot" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x140?text=Minecraft+проект" alt="Minecraft проект" />
+          <p>Плагины и модификации для Minecraft на Python и Java.</p>
+          <a href="https://github.com/yourusername/minecraft-projects" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x140?text=3D+модель" alt="3D модель" />
+          <p>3D-модели и рендеры, сделанные в Blender.</p>
+          <a href="https://github.com/yourusername/3d-models" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="music">
+      <h2>Музыка</h2>
+      <iframe
+        class="music-player"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/yourusername/yourtrack&color=%234fc3f7&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+      </iframe>
+      <p>Послушать мои треки на <a href="https://soundcloud.com/yourusername" target="_blank" rel="noopener" style="color:#4fc3f7;">SoundCloud</a>.</p>
+    </section>
+
+    <section id="contacts">
+      <h2>Контакты</h2>
+      <p>Пишите мне на email, или свяжитесь через соцсети:</p>
+      <div class="contacts-list">
+        <a href="mailto:your.email@example.com">Email</a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://t.me/yourtelegram" target="_blank" rel="noopener">Telegram</a>
+        <!-- Можно добавить ссылки на соцсети, если есть -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Олег Бобров. Все права защищены.
+  </footer>
+</body>
+</html>
