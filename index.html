@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="de">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Портфолио Олега</title>
+  <title>Portfolio Yaroslav Buntov</title>
   <style>
-    /* Сброс и базовые стили */
+    /* Reset & basics */
     * {
       box-sizing: border-box;
       margin: 0; padding: 0;
@@ -61,10 +61,12 @@
       font-weight: 700;
       font-size: 1.8rem;
     }
-    p {
+    p, ul {
       margin-bottom: 1rem;
     }
-    /* Проекты */
+    ul {
+      list-style: disc inside;
+    }
     .projects-list {
       display: grid;
       grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
@@ -97,15 +99,14 @@
     .project-card a:hover {
       color: #81d4fa;
     }
-    /* Музыка */
     .music-player {
       max-width: 100%;
       height: 166px;
       border: none;
       border-radius: 8px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+      margin-bottom: 1rem;
     }
-    /* Контакты */
     .contacts-list a {
       color: #4fc3f7;
       font-weight: 600;
@@ -126,7 +127,6 @@
       color: #777;
       margin-top: auto;
     }
-    /* Адаптив */
     @media (max-width: 480px) {
       header {
         flex-direction: column;
@@ -144,56 +144,67 @@
 </head>
 <body>
   <header>
-    <h1>Олег Бобров</h1>
+    <h1>Yaroslav Buntov</h1>
     <nav>
-      <a href="#home">Главная</a>
-      <a href="#about">О себе</a>
-      <a href="#projects">Проекты</a>
-      <a href="#music">Музыка</a>
-      <a href="#contacts">Контакты</a>
+      <a href="#home">Startseite</a>
+      <a href="#about">Über mich</a>
+      <a href="#projects">Projekte</a>
+      <a href="#music">Musik</a>
+      <a href="#skills">Fähigkeiten</a>
+      <a href="#education">Ausbildung</a>
+      <a href="#contact">Kontakt</a>
     </nav>
   </header>
 
   <main>
     <section id="home">
-      <h2>Привет! Я Олег Бобров</h2>
-      <p>Я — разработчик на Python, 3D-художник и музыкант. Люблю создавать ботов, игры и музыку. Добро пожаловать в моё портфолио!</p>
+      <h2>Willkommen!</h2>
+      <p>Ich bin Yaroslav Buntov, angehender Elektrotechniker und IT-Spezialist. Ich lerne an der Gewerbeschule Mosbach im AVdual Programm. Meine Interessen sind Programmierung, 3D-Modellierung und Musik.</p>
     </section>
 
     <section id="about">
-      <h2>О себе</h2>
-      <p><strong>Навыки:</strong></p>
+      <h2>Über mich</h2>
+      <p><strong>Ausbildung:</strong></p>
+      <p>Ausbildung an der Gewerbeschule Mosbach, Schwerpunkt Elektrotechnik (2025–2027).</p>
+      <p><strong>Fähigkeiten:</strong></p>
       <ul>
-        <li>Python: создание Telegram-ботов, автоматизация, скрипты</li>
-        <li>3D-моделирование: Blender, создание моделей для игр и визуализаций</li>
-        <li>Музыка: композиция, треки на SoundCloud</li>
-        <li>Ausbildung: прохожу профессиональное обучение в IT-сфере</li>
+        <li>Python (Telegram-Bots, Skripte)</li>
+        <li>3D-Modellierung (Low Poly)</li>
+        <li>Musikkomposition und Produktion (SoundCloud)</li>
+        <li>Minecraft-Projekte (Logik, Skripte)</li>
       </ul>
+      <p><strong>Persönliche Eigenschaften:</strong> Selbstständiges Lernen, Verantwortungsbewusstsein, kreativer Ansatz</p>
+      <p><strong>Ziele:</strong> Verbesserung der Deutschkenntnisse bis B2, anschließendes Studium am Studienkolleg im IT-Bereich, Weiterentwicklung in IT und Technik</p>
     </section>
 
     <section id="projects">
-      <h2>Проекты</h2>
+      <h2>Projekte</h2>
       <div class="projects-list">
         <div class="project-card">
-          <img src="https://via.placeholder.com/300x140?text=Python+бот" alt="Python бот" />
-          <p>Телеграм-бот для автоматизации задач и уведомлений.</p>
-          <a href="https://github.com/yourusername/python-telegram-bot" target="_blank" rel="noopener">GitHub</a>
+          <img src="https://via.placeholder.com/300x140?text=Python+Telegram-Bots" alt="Python Telegram-Bots" />
+          <p>Telegram-Bots in Python zur Automatisierung und Benachrichtigungen.</p>
+          <a href="https://github.com/yourusername/python-telegram-bots" target="_blank" rel="noopener">GitHub</a>
         </div>
         <div class="project-card">
-          <img src="https://via.placeholder.com/300x140?text=Minecraft+проект" alt="Minecraft проект" />
-          <p>Плагины и модификации для Minecraft на Python и Java.</p>
+          <img src="https://via.placeholder.com/300x140?text=3D+Low+Poly" alt="3D Low Poly Modelle" />
+          <p>Low Poly 3D-Modelle für Spiele und Visualisierungen.</p>
+          <a href="https://github.com/yourusername/3d-lowpoly" target="_blank" rel="noopener">GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x140?text=Minecraft+Projekte" alt="Minecraft Projekte" />
+          <p>Logische Schaltungen und Skripte für Minecraft-Modifikationen.</p>
           <a href="https://github.com/yourusername/minecraft-projects" target="_blank" rel="noopener">GitHub</a>
         </div>
         <div class="project-card">
-          <img src="https://via.placeholder.com/300x140?text=3D+модель" alt="3D модель" />
-          <p>3D-модели и рендеры, сделанные в Blender.</p>
-          <a href="https://github.com/yourusername/3d-models" target="_blank" rel="noopener">GitHub</a>
+          <img src="https://via.placeholder.com/300x140?text=Musik+Projekte" alt="Musik Projekte" />
+          <p>Musikproduktion am Computer, Nutzung von FL Studio und Ableton.</p>
+          <a href="https://soundcloud.com/yourusername" target="_blank" rel="noopener">SoundCloud</a>
         </div>
       </div>
     </section>
 
     <section id="music">
-      <h2>Музыка</h2>
+      <h2>Musik</h2>
       <iframe
         class="music-player"
         scrolling="no"
@@ -201,23 +212,47 @@
         allow="autoplay"
         src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/yourusername/yourtrack&color=%234fc3f7&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
       </iframe>
-      <p>Послушать мои треки на <a href="https://soundcloud.com/yourusername" target="_blank" rel="noopener" style="color:#4fc3f7;">SoundCloud</a>.</p>
+      <p>Mein Musikstil kombiniert elektronische Beats und kreative Sounds. Ich nutze FL Studio und Ableton zur Komposition und Produktion. Musik fördert meine kreative und technische Entwicklung.</p>
     </section>
 
-    <section id="contacts">
-      <h2>Контакты</h2>
-      <p>Пишите мне на email, или свяжитесь через соцсети:</p>
+    <section id="skills">
+      <h2>Fähigkeiten</h2>
+      <p><strong>Technisch:</strong></p>
+      <ul>
+        <li>Python (Anfänger bis Mittelstufe)</li>
+        <li>3D-Modellierung (Blender oder andere Tools)</li>
+        <li>DAW-Arbeit (FL Studio, Ableton, etc.)</li>
+        <li>Grundlagen der Elektrotechnik (Ausbildung)</li>
+      </ul>
+      <p><strong>Soft Skills:</strong></p>
+      <ul>
+        <li>Selbstständiges Lernen</li>
+        <li>Zielstrebigkeit</li>
+        <li>Verantwortung und Organisation</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2>Ausbildung</h2>
+      <p>Gewerbeschule Mosbach, AVdual Programm, Schwerpunkt Elektrotechnik, 2025–2027</p>
+      <p>VABO (Vorbereitendes Bildungsangebot)</p>
+      <p>Plan: Deutsch bis Niveau B2 lernen, danach Studienkolleg im IT-Bereich besuchen</p>
+    </section>
+
+    <section id="contact">
+      <h2>Kontakt</h2>
+      <p>Schreib mir gerne eine Nachricht oder verbinde dich mit mir über:</p>
       <div class="contacts-list">
-        <a href="mailto:your.email@example.com">Email</a>
+        <a href="mailto:deine.email@example.com">Email</a>
         <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
-        <a href="https://t.me/yourtelegram" target="_blank" rel="noopener">Telegram</a>
-        <!-- Можно добавить ссылки на соцсети, если есть -->
+        <a href="https://t.me/deintgusername" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://soundcloud.com/yourusername" target="_blank" rel="noopener">SoundCloud</a>
       </div>
     </section>
   </main>
 
   <footer>
-    © 2025 Олег Бобров. Все права защищены.
+    © 2025 Yaroslav Buntov. Alle Rechte vorbehalten.
   </footer>
 </body>
 </html>
