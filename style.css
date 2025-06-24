@@ -1,0 +1,20 @@
+/* Фоновый слой с гифкой */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif') no-repeat center center / cover;
+  filter: blur(8px);
+  z-index: -1; /* Чтобы быть позади всего содержимого */
+  /* Можно уменьшить яркость или контраст для более мягкого фона */
+  opacity: 0.5;
+}
+
+/* Чтобы основной контент не был размыт */
+main, header, footer {
+  position: relative;
+  z-index: 0;
+  /* если нужно — добавить фон с прозрачностью */
+  background: rgba(18, 18, 18, 0.8);
+  /* например, для читаемости */
+}
